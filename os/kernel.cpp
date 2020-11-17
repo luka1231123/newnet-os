@@ -1,3 +1,7 @@
+#include "gdt.h"
+
+
+
 void printf(char* str){
 	unsigned short* VideoMemory = (unsigned short*)0xb8000;
 	
@@ -8,7 +12,9 @@ void printf(char* str){
 
 extern "C" void kernelMain(void* multiboot_structure, unsigned int magicnumber)
 {
-	printf("hello world ");
+	printf("zup");
+	
+	GlobalDescriptorTable gdt;
 	
 	while(1);
 }
