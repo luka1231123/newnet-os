@@ -8,7 +8,7 @@ void printf(char* str){
 
 extern "C" void kernelMain(void* multiboot_structure, unsigned int magicnumber)
 {
-	printf("aA");
+	printf("hello world ");
 	
 	while(1);
 }
